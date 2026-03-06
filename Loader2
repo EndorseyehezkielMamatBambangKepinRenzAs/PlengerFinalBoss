@@ -1,0 +1,21 @@
+local scripts = {
+
+    [131623223084840] = "https://raw.githubusercontent.com/EndorseyehezkielMamatBambangKepinRenzAs/heron-nibosss8828828e9w999/refs/heads/main/LauNgapeMpruy.lua", -- escape tsunami
+
+    [78326551441316] = "https://raw.githubusercontent.com/EndorseyehezkielMamatBambangKepinRenzAs/heron-nibosss8828828e9w999/refs/heads/main/pakGMniboss.lua", -- pak gm
+
+    [93978595733734] = "https://raw.githubusercontent.com/LaserOneKaiser/Violence-Districk00/refs/heads/main/SawitVD", -- violence districk
+
+}
+
+local gameScript = scripts[game.PlaceId]
+
+if gameScript then
+
+    loadstring(game:HttpGet(gameScript))()
+
+else
+
+    game.Players.LocalPlayer:Kick("Game ID " .. game.PlaceId .. " not supported!")
+
+end
